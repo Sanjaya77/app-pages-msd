@@ -1,0 +1,281 @@
+
+.app-form{
+    background-color:royalblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+
+.app-form-hdr{
+    display: flex;
+    background-color: transparent;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    
+}
+.app-form-container{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width:100%;
+    max-width:1400px;
+    height:auto;
+    align-self:center;
+}
+
+.app-form-fter{
+    background-color:#000533;
+    display:flex;
+    padding:1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.app-form-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* justify-content:space-between; */
+    line-height: 1.5;
+    align-items: start;
+
+}
+
+
+fieldset{
+    width: 100%;
+    min-width: 37.5rem;
+    font-size: 1.5rem;
+}
+
+.app-form-group div{
+    padding: 0.5rem 1.5rem;
+}
+
+
+/* ========== JOB FORM =========  */
+.cleint-card, .product-card {
+    font-weight: 600;
+}
+
+.client-card-span{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-right:1rem;
+}
+
+.cleint-card p:first-of-type{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.cleint-card,.product-card{
+    background-color:#F4F5F8;
+    margin:3px;
+    border: 1px solid #D4D7DC;
+    border-radius: 5px;
+}
+
+.special{
+    display: none;
+    padding: 2px;
+}
+
+/* ====== INVOCES FORM ======  */
+
+.balance-due{
+    min-height:12rem;
+}
+.balance-due h3{
+    font-size: 2rem;
+}
+
+.balance-due p{
+    font-size: 5rem;
+}
+
+.table{
+    width: 95%;
+}
+
+.invoice-grid{
+    display: grid;
+    grid-template-columns: 5% 25% 30%  5% 10% 10%  10% 1fr;
+   
+  
+}
+
+
+.invoice-grid div, .invoice-grid p  {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    border: 1px solid grey;
+}
+
+
+.invoice-grid div input[type = "text"] {
+   border: none;
+}
+
+.icon-t:before {
+    content: "\e900";
+    color: #e30881;
+  }
+
+  .btn-sm-r{
+      background-color: red;
+      color: white;
+      width: 100%;
+      font-size: 1.5rem;
+      border: none;
+  }
+/* APP FORM HELPERS */
+.p-label{
+    margin: 1rem;
+    max-width: 25rem;
+}
+
+.form-btn-lg{
+    text-decoration: none;
+    background-color: #7FD000;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+}
+.form-btn-sm{
+    text-decoration: none;
+    background-color: #7FD000;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    width: 50%;
+}
+.upload-btns{
+    display:flex;
+    justify-content: space-between;
+    gap:0 1rem;
+}
+.attachments{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.drag-drop{
+    height: 20rem;
+    border: 1px solid blue;
+}
+input[type='text'],select, textarea{
+    display: inline-block;
+    width:100%;
+    padding: 0.5rem;
+  }
+
+input[type='email']{
+    display: inline-block;
+    width:100%;
+    padding: 0.5rem;
+  }
+
+
+.close-sm{
+    padding:3px;
+    border-radius: 50%;
+    border: 0;
+    color: red;
+    float: right;
+}
+
+.btn-sm{
+    padding:5px;
+    border-radius:3px;
+    border: 0;
+    color: #fff;
+    background-color:green;
+    margin:0.5rem 0;
+   
+}
+.leg-main{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.div-wrap{
+    margin:0;
+    padding:0 !important;
+    display: none;
+}
+
+.div-wrap-sm{
+    margin:0;
+    padding:0 !important;
+}
+
+
+
+@media only screen and (min-width:75em){
+    
+    .app-form-form{
+        display: flex;
+        gap: 1rem;
+        line-height: 1.5;
+     
+    
+    }
+    fieldset{
+        width: 30%;
+        min-width: 37.5rem;
+        font-size: 1.5rem;
+        padding:1rem;
+    }
+    
+    .f-width{
+        width: 100%;
+        display: flex;
+    }
+
+    .app-form-form{
+        display: flex;
+        align-items: stretch;
+        justify-content:space-evenly;
+        line-height: 1.5;
+    
+    }
+    .d-2{
+        width: 45%;
+    }
+
+}
+
+
+  .flippy{
+    display: block;
+    padding: 0;
+    max-width:270px;
+    color:red;
+    font-size:.8rem;
+    background-color: yellow;
+  }
+
+ /* QB - Color Scheme
+
+Black : #333333
+Grey: D4D7DC
+BLUE-1 : #0077C5
+BLUE-2 : #365EBF;
+BLUE-GREEN:#337ab7
+ORANGE:#FF8000
+BRIGHT GREEN: #7FD000;
+GRID GREY: #6B6C72;
+GRID CELL BG: #F4F5F8;
+CELL HOVER: #C7C7C7
+CELL HOVE OUTLINE: #4736ef;
+Header Grey: e3eaf3
+
+Red Orange :#ce5133;
+solid green: #2ca01c; 
+
+font size: 1.4 rem
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2); */
