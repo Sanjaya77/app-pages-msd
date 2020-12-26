@@ -133,6 +133,60 @@ fieldset{
       font-size: 1.5rem;
       border: none;
   }
+
+  .table-footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+  .table-footer-actions{
+    
+      
+  }
+  .table-footer-totals{
+      
+      flex-basis:40%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .table-footer-totals>div{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .table-footer-input-1{
+      flex-basis: 30%;
+  }
+  .tax-totals-1{
+      flex-basis: 30%;   
+  }
+
+  .tax-totals-1 p{
+      font-size: 1rem;
+      font-weight: 600;
+  }
+  .tax-totals-2{
+      align-self:flex-end;  
+  }
+
+  .tax-totals p{
+      font-size: 1rem;
+  }
+
+  .invoice-messages{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+  } 
+
+  #temp{
+      background-color: lightblue;
+      border:1px solid red;
+  }
+
 /* APP FORM HELPERS */
 .p-label{
     margin: 1rem;
@@ -213,7 +267,11 @@ input[type='email']{
     padding:0 !important;
 }
 
-
+.add-green{
+    display:inline-block;
+    background-color: green;
+    color: #fff;
+}
 
 @media only screen and (min-width:75em){
     

@@ -165,10 +165,75 @@
                      </div>
 
                </div>
-               <button>Add lines </button>
-               <button>Clear all lines </button>
-               <button>Add subtotal </button>
+               <div class="table-footer">
+                  <div class="table-footer-actions">
+                     <button>Add lines </button>
+                     <button>Clear all lines </button>
+                     <button>Add subtotal </button>
+                  </div>
+                  <div class="table-footer-totals">
+                     <div>
+                        <p>Subtotal</p>
+                        <p>&#36; 0.00</p>
+                     </div>
+                     <div>
+                        <p>Discounts</p>
+                        
+                        <select name="discount" id="discount-select" class="table-footer-input-1">
+                           <option value="0">0.00</option>
+                           <option value="5%">5%</option>
+                           <option value="">Holiday Promo</option>
+                           <option value="" class="add-green">&#10010; Add</option>
+                     </select>
+
+                     </div>
+                     <div>
+                       
+                        <div class="tax-totals-1">
+                        <p>Taxable Subtotal : &#36; 0.00</p>
+                           <select name="taxrates" id="tax" class="table-footer-input-1">
+                           <option value="0">WDC 6%</option>
+                           <option value="5%">None 0%</option>
+                           <option value="" class="add-green">&#10010; Add</option>
+                     </select>
+                        </div>
+                        <div class="tax-totals-2">
+                           <input type="text" name="" id="">
+                        
+                        </div>
+                     </div>
+                     <div>
+                        <p>Total </p>
+                        <p>&#36; 0.00</p>
+                     </div>
+                     <div>
+
+                        <p>Balance due</p>
+                        <p>&#36; 0.00</p>
+                     
+                     </div>
+                  </div>
+
+               </div>
+               <div  class="invoice-messages">
+                     <div>
+                     <label for="">Message on invoice</label>
+                        <textarea name="" id="" cols="30" rows="10">
+                           Our policy for special orders, purchases for individuals, and custom made jewelry will have no return or exchange.  All jewelry purchased for gift will come with a ten (10) day exchange or return policy providing receipt is accompanied with merchandise and merchandise has not been worn.  All deposits towards any new merchandise will have a 100% return up to ten (10) business days.  If merchandise remains on hold post the ten business days clients may receive a credit towards any goods or services for the life of our business entity.
+                           *All purchases of lab grown diamonds are subject to trade-in value based only on current market value.
+
+                        </textarea>
+                  </div>
+                  <div>
+                     <label for="">Optional Messages</label>
+                        <textarea name="" id="" cols="30" rows="10">
+                           
+                        </textarea>
+                  </div>
+               </div>
+            <div>
             </fieldset>
+           
          </form>
          <span class=""></span>
       </main>
