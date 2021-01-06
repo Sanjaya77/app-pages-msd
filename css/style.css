@@ -32,6 +32,9 @@ font size: 1.4 rem
     padding: 0;
     box-sizing: inherit;
 }
+a{
+  text-decoration: none;
+}
 
 html{
     box-sizing: border-box;
@@ -286,6 +289,8 @@ header{
   margin:1rem 0;
 } */
 
+
+
 /* ======== APP STYLES ==========*/
 
 .main-overview{
@@ -313,6 +318,7 @@ header{
   align-items: center;
   padding: 1rem;
 }
+
  /* INVOICE OVERVIEW - END  */
 
  .client-overview{
@@ -332,6 +338,15 @@ header{
 
  }
 
+ .client-transactions-grid{
+  display: grid;
+  /* grid-template-columns:repeat(9, minmax(min-content, 1fr)); */
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows:auto;
+  align-items: center;
+  padding: 1rem;
+}
+
  .client-view{
    background-color: whitesmoke;
    border-radius:0.5rem;
@@ -340,6 +355,7 @@ header{
    width: 100%;
    height: auto;
    flex-wrap: wrap;
+  
  }
  
 .client-view-data{
@@ -405,6 +421,29 @@ header{
   color: #333333;
 }
 
+.tablinks{
+ list-style-type:none;
+ display: flex;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+}
+
+.tablinks li {
+  display: inline-block;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.5);
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
+
+.tablinks li.tabactive{
+  color: green;
+  background-color:#eee ;
+
+  
+}
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
@@ -415,13 +454,15 @@ header{
   background-color: #ccc;
 }
 
+
+
 /* Style the tab content */
-.tabcontent {
+/* .tabcontent {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-}
+} */
  /* CUSTOMER VIEW - END  */
 
 .th{
@@ -436,14 +477,18 @@ header{
   display:flex;
   padding:1rem 2rem;
   border-bottom:1px solid #D4D7DC;
-  height: 5rem;
-  align-items: center;
+  height: 8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:space-between;
 
 }
 
-.td.alert{
-  flex-direction:  column;
+.note{
+  display: inline-block;
+  flex: 1;
 }
+
 
 /* PRODUCT VIEW  */
 .product-overview{
@@ -644,6 +689,7 @@ hr{
 } */
 
 .small-print{
+  display: inline-block;
   font-size: 0.8rem;
   color:red;
 }
@@ -662,9 +708,7 @@ hr{
   transform: rotate(180deg);
 }
 
-.show{
-  display: block;
-}
+
 
 
 
@@ -780,7 +824,70 @@ hr{
   float: right;
 }
 
+.emo{
+  display: inline-block;
+  padding-right: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.emo-lg{
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: yellow;
+}
+.due{
+  display: inline-block;
+}
+.sm-btn{
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 3px 4px;
+}
 
+.select{
+  position: relative;
+  background-color: yellowgreen;
+  font-size: 1.5rem;
+}
+
+.select-btn{
+  background-color: transparent;
+  border: none;
+  margin:0;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.select-content{
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #fff;
+  width:100%;
+  padding:1rem 0;
+  margin-top: 5px;
+  border: 1px solid #333;
+}
+
+.select-content a {
+  display: block;
+}
+
+.select-conten-span{
+  display: inline-block;
+  padding-left: 1rem;
+}
+.select-content a:hover{
+  background-color:#ccc ;
+}
+
+.show{
+  display: block;
+}
   /* QB - Color Scheme
 
 Black : #333333
@@ -816,4 +923,8 @@ font size: 1.4 rem
       margin-left:1rem;
     }
 
-    
+    @media only screen and (min-width:37.5em){
+      .client-transactions-grid{
+        grid-template-columns:5% repeat(6, minmax(min-content, 1fr)) 15% 15%; 
+      }
+  }

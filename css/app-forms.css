@@ -1,4 +1,8 @@
 
+a {
+    text-decoration: none;
+}
+
 .app-form{
     background-color:royalblue;
     min-height: 100vh;
@@ -98,15 +102,14 @@ fieldset{
 }
 
 .table{
-    width: 95%;
+    width: 100%;
 }
 
 .invoice-grid{
     display: grid;
     grid-template-columns: 5% 25% 30%  5% 10% 10%  10% 1fr;
-   
-  
 }
+
 
 
 .invoice-grid div, .invoice-grid p  {
@@ -186,6 +189,28 @@ fieldset{
       background-color: lightblue;
       border:1px solid red;
   }
+
+
+  /* PAYMENT FORM  */
+  .payment-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    /* grid-template-columns: 5% 35% 15% repeat(3, 1fr); */
+}
+.payment-grid div, .payment-grid p  {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    border: 1px solid grey;
+}
+
+.payment-grid div input[type = "text"] {
+    border: none;
+ }
+ 
+ .payment-grid div span {
+     margin-left: 1rem;
+ }
 
 /* APP FORM HELPERS */
 .p-label{
@@ -273,6 +298,43 @@ input[type='email']{
     color: #fff;
 }
 
+.col-2{
+    display: flex;
+    gap: 2rem;
+}
+.col-2 > div {
+    padding: 0;
+    min-width: 40%;
+}
+
+.s-btwn{
+    justify-content: space-between;
+}
+
+.col-3{
+    display: flex;
+    gap: 2rem;
+}
+.col-3 > div{
+    padding: 0;
+}
+
+
+.d-1{
+    width: 100%;
+}
+
+.upr{
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:37.5em){
+    .payment-grid{
+        
+        grid-template-columns: 5% 35% 15% repeat(3, 1fr); 
+    }
+}
+
 @media only screen and (min-width:75em){
     
     .app-form-form{
@@ -304,6 +366,17 @@ input[type='email']{
     .d-2{
         width: 45%;
     }
+
+    .d-1 .cleint-card{
+        max-width: 50%;
+    }
+    .d-1-input{
+        max-width: 50%;
+    }
+    .d-1-input-s{
+        max-width: 30%;
+    }
+    
 
 }
 

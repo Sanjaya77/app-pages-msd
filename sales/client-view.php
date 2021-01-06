@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Street Diamonds Management Application</title>
+    <title>Client Details</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link
@@ -25,7 +25,15 @@
                     <p>Total Unpaid : &#36;500.00 <br> <span class="small-print">&#40; Last 365 days &#41;</span></p>
                 </div> 
             </div>
-            <button>New Transaction</button>
+            <div class="select">
+               <button class="select-btn">New Transaction &#9661;</button>
+               <div class="select-content">
+                  <a href=""><span class="select-conten-span">Invoice</span></a>
+                  <a href=""><span class="select-conten-span">Payment</span></a>
+                  <a href=""><span class="select-conten-span">Estimate</span></a>
+                  <a href=""><span class="select-conten-span">Statement</span></a>
+               </div>
+            </div>
 
             <!-- 
                New Transaction Opens up dropdown
@@ -40,12 +48,115 @@
         </div>
         <div class="main-table-container">
             <div class="tab">
-               <button class="tablinks">Transaction List</button>
-               <button class="tablinks">Customer Details</button>
-
+               <ul class="tablinks">
+                  <li class="tabactive">Transaction List</li>
+                  <li>Client's Details</li>
+                  <li>Client's Jobs</li>
+               </ul>
             </div>
 
-            <div id="client-info" class="client-view">
+
+            <div id="client-transactions" class="client-view-transactions tab-content">   <!-- Transactions Start -->
+               <div class="client-transactions-grid">
+                  <div class="th">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <p class="th">Date</p>
+                  <p class="th">Type</p>
+                  <p class="th">No</p>
+                  <p class="th">Due Date</p>
+                  <p class="th">Balance</p>
+                  <p class="th">Total</p>
+                  <p class="th">Status</p>
+                  <p class="th">Action</p>
+                  <!-- DATA ROW STRAT -->
+                  <div class="td">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <div class="td">4/11/2020</div>
+                  <div class="td">Invoice</div>
+                  <div class="td">11829</div>
+                  <div class="td">4/11/2020</div>
+                  <div class="td">&#36;0.00</div>
+                  <div class="td">&#36;1300.00</div>
+                  <div class="td"> <a href="#"><span class="emo">&#x2705;</span>Paid</a></div>
+                  <div class="td"><a><span class="emo-lg">&#x1F5A8;</span>Print</a></div>
+                  <!-- DATA ROW END -->
+                  <!-- DATA ROW STRAT -->
+                  <div class="td">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <div class="td">6/11/2020</div>
+                  <div class="td">Payment</div>
+                  <div class="td">11859</div>
+                  <div class="td">7/11/2020</div>
+                  <div class="td">&#36;0.00</div>
+                  <div class="td">&#36;1300.00</div>
+                  <div class="td">
+                     <a><span class="emo-lg">&#x2702;</span>Refunded</a> 
+                  </div>
+                  <div class="td"> 
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                  </div>
+                  <!-- DATA ROW END -->
+                  <!-- DATA ROW STRAT -->
+                  <div class="td">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <div class="td">7/15/2020</div>
+                  <div class="td">Invoice</div>
+                  <div class="td">11829</div>
+                  <div class="td">4/11/2020</div>
+                  <div class="td">&#36;500.00</div>
+                  <div class="td">&#36;2500.00</div>
+                  <div class="td"> 
+                     <a href="#"><span class="emo-lg">&#x1F4D6;</span> Open </a>
+                     <span class="due"> Overdue on 7/31/2020</span>
+                     <span class="small-print">Partially paid &#36;2000.00</span>
+                  </div>
+                  <div class="td"> 
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a><span class="emo-lg"> &#x1F4DD;</span>Edit</a>
+                  </div>
+                  <!-- DATA ROW END -->
+                  <!-- DATA ROW STRAT -->
+                  <div class="td">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <div class="td">7/15/2020</div>
+                  <div class="td">Invoice</div>
+                  <div class="td">11829</div>
+                  <div class="td">4/11/2020</div>
+                  <div class="td">&#36;500.00</div>
+                  <div class="td">&#36;2500.00</div>
+                  <div class="td alert"> 
+                     <a href="#"><span class="emo-lg">&#x1F4D6;</span>Open</a>
+                     <span class="due">Due on 7/31/2020</span>
+                     <span class="small-print">Partially paid &#36;2000.00</span></div>
+                  <div class="td">
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a><span class="emo-lg"> &#x1F4DD;</span>Edit</a>
+                  </div>
+                  <!-- DATA ROW END -->
+                  <div class="td">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <div class="td">7/15/2020</div>
+                  <div class="td">Payment</div>
+                  <div class="td">11829</div>
+                  <div class="td">4/11/2020</div>
+                  <div class="td">&#36;0.00</div>
+                  <div class="td">-&#36;500.00</div>
+                  <div class="td"> <a href="#"><span class="emo">&#x1F4B0;</span>Closed</a></div>
+                  <div class="td"> 
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a class="sm-btn"><span class="emo-lg">&#x2702;</span>Refund</a>
+                  </div>
+                  <!-- DATA ROW END -->
+               
+               </div> 
+            </div>  <!-- Transactions End -->
+            <div id="client-info" class="client-view tab-content">
                 <div class="client-view-data field-s">
                     <h2>Client Contact Details</h2>
                      <div class="client-view-data-box">
@@ -194,66 +305,6 @@
 
                 
             </div> <!-- Client View -->
-            <div id="client-transactions" class="client-view-transactions">   <!-- Transactions Start -->
-            <div class="invoice-overview">
-                <div class="th">
-                    <input type="checkbox" id="tic" name="tic">
-                </div>
-                <p class="th">Date</p>
-                <p class="th">Type</p>
-                <p class="th">No</p>
-                <p class="th">Due Date</p>
-                <p class="th">Balance</p>
-                <p class="th">Total</p>
-                <p class="th">Status</p>
-                <p class="th">Action</p>
-                <!-- DATA ROW STRAT -->
-                <div class="td">
-                    <input type="checkbox" id="tic" name="tic">
-                </div>
-                <div class="td">4/11/2020</div>
-                <div class="td">Invoice</div>
-                <div class="td">11829</div>
-                <div class="td">4/11/2020</div>
-                <div class="td">&#36;0.00</div>
-                <div class="td">&#36;1300.00</div>
-                <div class="td"> <a href="#">&#x2705;Paid</a></div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Print</div>
-                 <!-- DATA ROW END -->
-                <!-- DATA ROW STRAT -->
-                <div class="td">
-                    <input type="checkbox" id="tic" name="tic">
-                </div>
-                <div class="td">6/11/2020</div>
-                <div class="td">Payment</div>
-                <div class="td">11859</div>
-                <div class="td">7/11/2020</div>
-                <div class="td">&#36;0.00</div>
-                <div class="td">&#36;1300.00</div>
-                <div class="td"> <i class="fas fa-eye-slash">&nbsp;</i>Voided</div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Print</div>
-                 <!-- DATA ROW END -->
-                <!-- DATA ROW STRAT -->
-                <div class="td">
-                    <input type="checkbox" id="tic" name="tic">
-                </div>
-                <div class="td">7/15/2020</div>
-                <div class="td">Invoice</div>
-                <div class="td">11829</div>
-                <div class="td">4/11/2020</div>
-                <div class="td">&#36;500.00</div>
-                <div class="td">&#36;2500.00</div>
-                <div class="td alert"> <a href="#"><i class="fas fa-exclamation-triangle">&nbsp;</i>Overdue on 7/31/2020</a><span class="small-print">Partially paid &#36;2000.00</span></div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Print</div>
-                 <!-- DATA ROW END -->
-            
-            </div> 
-
-
-
-
-            </div>  <!-- Transactions End -->
-        
         </div>
     </div> <!--Main Container End -->
   

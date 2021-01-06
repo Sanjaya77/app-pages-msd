@@ -25,6 +25,45 @@ dropBtn2.addEventListener('click', function () {
 
 });
 
+//CLIENT VIEW TABS
+const tabs = document.querySelectorAll(".tablinks li");
+const tabContent = document.querySelectorAll(".tab-content");
+
+tabContent[0].style.display = "block";
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    removeActvie();
+    removeShow();
+    tab.classList.add("tabactive");
+    tabContent[index].style.display = "block";
+  })
+})
+
+function removeActvie() {
+  tabs.forEach(tab => tab.classList.remove("tabactive"));
+}
+
+function removeShow() {
+  tabContent.forEach(tb => tb.style.display = "none")
+
+
+}
+
+
+//DROP DOWN LIST
+
+const selectBtns = document.querySelectorAll(".select-btn");
+const selectContent = document.querySelectorAll(".select-content");
+
+
+selectBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.nextElementSibling.classList.toggle("show");
+  })
+})
+
+
 
 //JOB DUE DATES
 
@@ -54,3 +93,6 @@ if (noOfDays == 0) {
 } else {
   dueAlert.innerHTML = `<span style="color:red;"> Overdue by ${Math.abs(noOfDays)} Days </span>`;
 }
+
+
+
