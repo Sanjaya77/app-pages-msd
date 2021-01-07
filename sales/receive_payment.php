@@ -54,9 +54,11 @@
                           <div>
                             <label for="">Payment method</label><br>
                             <select name="" id="">
-                                <option value="">--Search Client--</option>
-                                <option value="">Names in Alphabatical Order</option>
-                                <option value="">&#100010; Add</option>
+                                <option value="">--Select Payment Method--</option>
+                                <option value="">Visa</option>
+                                <option value="">Master</option>
+                                <option value="">Paypal</option>
+                                <option value="">&#10010; Add</option>
                             </select>
                           </div>
                           <div>
