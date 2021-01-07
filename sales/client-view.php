@@ -19,7 +19,16 @@
     <div class="main-container">
         <div class="main-overview">
             <div class="client-summary">
-                <h1>John Doe <span class="edit"><a href="#" target="_blank" rel="noopener noreferrer">&nbsp;<i class="fas fa-pencil-alt"></i> Edit</a></span></h1>
+                <h1>John Doe 
+                    <span class="edit">
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                         Edit
+                         <span class="emo-xlg">
+                            &#x270D;
+                         </span>	
+                      </a>
+                     </span>
+                  </h1>
                 <div> 
                     <p>Paid : &#36;5100.00 <br><span class="small-print">&#40; Last 30 days &#41;</span></p>
                     <p>Total Unpaid : &#36;500.00 <br> <span class="small-print">&#40; Last 365 days &#41;</span></p>
@@ -30,19 +39,8 @@
                <div class="select-content">
                   <a href=""><span class="select-conten-span">Invoice</span></a>
                   <a href=""><span class="select-conten-span">Payment</span></a>
-                  <a href=""><span class="select-conten-span">Estimate</span></a>
-                  <a href=""><span class="select-conten-span">Statement</span></a>
                </div>
             </div>
-
-            <!-- 
-               New Transaction Opens up dropdown
-               Add Invoice
-               Payment
-               Quote
-               Refund
-
-             -->
             
             <button>Add Job</button>
         </div>
@@ -73,22 +71,53 @@
                   <div class="td">
                      <input type="checkbox" id="tic" name="tic">
                   </div>
-                  <div class="td">4/11/2020</div>
-                  <div class="td">Invoice</div>
+                  <div class="td">4/12/2020</div>
+                  <div class="td">
+                     Invoice
+                  </div>
                   <div class="td">11829</div>
-                  <div class="td">4/11/2020</div>
+                  <div class="td">1/12/2021</div>
                   <div class="td">&#36;0.00</div>
                   <div class="td">&#36;1300.00</div>
                   <div class="td"> <a href="#"><span class="emo">&#x2705;</span>Paid</a></div>
-                  <div class="td"><a><span class="emo-lg">&#x1F5A8;</span>Print</a></div>
+                  <div class="td">  
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                  </div>
+                  <!-- DATA ROW END -->
+                   <!-- DATA ROW END -->
+                   <div class="td">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <div class="td">1/07/2020</div>
+                  <div class="td">
+                     Payment
+                     <span class="inv-pay-no">INV #:11829</span>
+
+                  </div>
+                  <div class="td">11329</div>
+                  <div class="td">1/12/2021</div>
+                  <div class="td">&#36;0.00</div>
+                  <div class="td">-&#36;1300.00</div>
+                  <div class="td"> 
+                     <a href="#"><span class="emo">&#x1F4B0;</span>Closed</a>
+                  </div>
+                  <div class="td"> 
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                  </div>
                   <!-- DATA ROW END -->
                   <!-- DATA ROW STRAT -->
                   <div class="td">
                      <input type="checkbox" id="tic" name="tic">
                   </div>
-                  <div class="td">6/11/2020</div>
-                  <div class="td">Payment</div>
-                  <div class="td">11859</div>
+                  <div class="td">1/10/2021</div>
+                  <div class="td">
+                     Refund
+                     <span class="inv-pay-no">PAY #:11329</span>
+
+                  </div>
+                  <div class="td">10059</div>
                   <div class="td">7/11/2020</div>
                   <div class="td">&#36;0.00</div>
                   <div class="td">&#36;1300.00</div>
@@ -97,21 +126,22 @@
                   </div>
                   <div class="td"> 
                      <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
                   </div>
                   <!-- DATA ROW END -->
                   <!-- DATA ROW STRAT -->
                   <div class="td">
                      <input type="checkbox" id="tic" name="tic">
                   </div>
-                  <div class="td">7/15/2020</div>
+                  <div class="td">12/11/2020</div>
                   <div class="td">Invoice</div>
-                  <div class="td">11829</div>
-                  <div class="td">4/11/2020</div>
+                  <div class="td">11550</div>
+                  <div class="td">1/12/2021</div>
                   <div class="td">&#36;500.00</div>
                   <div class="td">&#36;2500.00</div>
                   <div class="td"> 
                      <a href="#"><span class="emo-lg">&#x1F4D6;</span> Open </a>
-                     <span class="due"> Overdue on 7/31/2020</span>
+                     <span class="due"> Overdue on 1/12/2021</span>
                      <span class="small-print">Partially paid &#36;2000.00</span>
                   </div>
                   <div class="td"> 
@@ -123,16 +153,35 @@
                   <div class="td">
                      <input type="checkbox" id="tic" name="tic">
                   </div>
-                  <div class="td">7/15/2020</div>
+                  <div class="td">12/11/2020</div>
+                  <div class="td">
+                     Payment
+                     <span class="inv-pay-no">INV #:11550</span>
+                  </div>
+                  <div class="td">11230</div>
+                  <div class="td">1/12/2021</div>
+                  <div class="td">&#36;.00</div>
+                  <div class="td">&#36;2000.00</div>
+                  <div class="td"> <a href="#"><span class="emo">&#x1F4B0;</span>Closed</a></div>
+                  <div class="td"> 
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a><span class="emo-lg"> &#x1F4DD;</span>Edit</a>
+                  </div>
+                  <!-- DATA ROW END -->
+                  <!-- DATA ROW STRAT -->
+                  <div class="td">
+                     <input type="checkbox" id="tic" name="tic">
+                  </div>
+                  <div class="td">12/30/2020</div>
                   <div class="td">Invoice</div>
-                  <div class="td">11829</div>
-                  <div class="td">4/11/2020</div>
+                  <div class="td">11560</div>
+                  <div class="td">1/30/2021</div>
                   <div class="td">&#36;500.00</div>
-                  <div class="td">&#36;2500.00</div>
+                  <div class="td">&#36;1500.00</div>
                   <div class="td alert"> 
                      <a href="#"><span class="emo-lg">&#x1F4D6;</span>Open</a>
-                     <span class="due">Due on 7/31/2020</span>
-                     <span class="small-print">Partially paid &#36;2000.00</span></div>
+                     <span class="due">Due on 1/30/2020</span>
+                     <span class="small-print">Partially paid &#36;1000.00</span></div>
                   <div class="td">
                      <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
                      <a><span class="emo-lg"> &#x1F4DD;</span>Edit</a>
@@ -142,15 +191,18 @@
                      <input type="checkbox" id="tic" name="tic">
                   </div>
                   <div class="td">7/15/2020</div>
-                  <div class="td">Payment</div>
-                  <div class="td">11829</div>
-                  <div class="td">4/11/2020</div>
+                  <div class="td">
+                     Payment
+                     <span class="inv-pay-no">INV #:11560</span>
+                  </div>
+                  <div class="td">11235</div>
+                  <div class="td">1/30/2021</div>
                   <div class="td">&#36;0.00</div>
-                  <div class="td">-&#36;500.00</div>
+                  <div class="td">-&#36;1000.00</div>
                   <div class="td"> <a href="#"><span class="emo">&#x1F4B0;</span>Closed</a></div>
                   <div class="td"> 
                      <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
-                     <a class="sm-btn"><span class="emo-lg">&#x2702;</span>Refund</a>
+                     <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
                   </div>
                   <!-- DATA ROW END -->
                
@@ -228,10 +280,6 @@
                         <p class="client-view-p" >Company:</p>
                         <p class="client-view-d" >State Department</p>
                      </div>
-                     <div class="client-view-data-box">
-                        <p class="client-view-p" >is Parent? :</p>
-                        <p class="client-view-d" >No | He is a Dad | She is a Mom</p>
-                     </div>
                 </div>
                 <div class="client-view-data field-s">
                     <h2>Spouse's Addintional Info</h2>
@@ -254,10 +302,6 @@
                      <div class="client-view-data-box">
                         <p class="client-view-p" >Company:</p>
                         <p class="client-view-d" >State Department</p>
-                     </div>
-                     <div class="client-view-data-box">
-                        <p class="client-view-p" >is Parent? :</p>
-                        <p class="client-view-d" >No | He is a Dad | She is a Mom</p>
                      </div>
                 </div>
                 <div class="client-view-data field-s">

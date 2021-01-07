@@ -185,9 +185,8 @@ fieldset{
 
   } 
 
-  #temp{
-      background-color: lightblue;
-      border:1px solid red;
+  .add-inv-bill-a {
+      display: none;
   }
 
 
@@ -349,6 +348,10 @@ input[type='email']{
         min-width: 37.5rem;
         font-size: 1.5rem;
         padding:1rem;
+    }
+
+    .contact-details{
+        width: 40%;
     }
     
     .f-width{

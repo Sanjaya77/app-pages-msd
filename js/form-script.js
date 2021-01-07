@@ -64,41 +64,9 @@ closeEx.addEventListener('click', () => {
     addExItem.checked = false;
 });
 
+//ADD INVOICE PAGE BTNS
 
 
 
-// let clientItem = document.getElementById('client-item');
-
-// clientItem.checked =false;
-
-// clientItem.addEventListener('change',function(){
-
-//     if(clientItem.checked == true){
-//         this.parentElement.nextElementSibling.classList.add('show');
-//     }else{
-//         this.parentElement.nextElementSibling.classList.remove('show');
-//     }
-//         // this.parentElement.nextElementSibling.classList.toggle('show');
 
 
-
-// });
-
-// let addExistProduct = document.getElementById('existing-product');
-// let addExistProductInput = document.getElementById('ex-product-id');
-
-// addExistProduct.checked =false;
-
-// addExistProduct.addEventListener('change',function(){
-
-//     if(addExistProduct.checked == true){
-//         addExistProductInput.disable = false;
-//     }else{
-//         addExistProductInput.disable = true;
-//     }
-//     return addExistProductInput;
-//         // this.parentElement.nextElementSibling.classList.toggle('show');
-
-
-
-// });

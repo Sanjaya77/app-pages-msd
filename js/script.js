@@ -65,6 +65,7 @@ selectBtns.forEach((btn) => {
 
 
 
+
 //JOB DUE DATES
 
 let dueAlert = document.getElementById('due-alert');
@@ -93,6 +94,7 @@ if (noOfDays == 0) {
 } else {
   dueAlert.innerHTML = `<span style="color:red;"> Overdue by ${Math.abs(noOfDays)} Days </span>`;
 }
+
 
 
 

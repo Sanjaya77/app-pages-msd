@@ -24,7 +24,7 @@
         <h3 title="All Client Information Goes Here">Client's Information</h3>
       </div>
       <form action="" class="app-form-form">
-        <fieldset>
+        <fieldset class="contact-details">
             <legend>Contact Details</legend>
             <div class="app-form-group ">
                 <div>
@@ -32,7 +32,7 @@
                     <input type="text" name="" id="">
                 </div>
                 <div>
-                    <label for="">First Name</label><br>
+                    <label for="">First Name<sup>*</sup></label><br>
                     <input type="text" name="" id="">
                 </div>
                 <div>
@@ -40,7 +40,7 @@
                     <input type="text" name="" id="">
                 </div>
                 <div>
-                    <label for="">Last Name</label><br>
+                    <label for="">Last Name<sup>*</sup></label><br>
                     <input type="text" name="" id="">
                 </div>
                 <div>  
@@ -48,7 +48,7 @@
                     <input type="text" name="" id="">
                 </div>
                 <div>  
-                    <label for="">Email</label><br>
+                    <label for="">Email<sup>*</sup></label><br>
                     <input type="email" name="" id="" placeholder="Seperate multiple emails with commas">
                 </div>
             </div>
@@ -69,7 +69,7 @@
 
             </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="contact-details">
             <legend>Addess</legend>
             <div class="app-form-group">
                 <h4>Billing Address</h4>
@@ -81,6 +81,10 @@
                     <label for="">City</label><br>
                     <input type="text" name="" id="">
                     
+                </div>
+                <div>
+                    <label for="">Zip</label><br>
+                    <input type="text" name="" id="">
                 </div>
                 <div>
                     <label for="">State/Province</label><br>
@@ -105,6 +109,10 @@
                     
                 </div>
                 <div>
+                    <label for="">Zip</label><br>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
                     <label for="">State/Province</label><br>
                     <input type="text" name="" id="">
                 </div>
@@ -124,9 +132,6 @@
                 <div>
                     <input type="checkbox" name="" id="" checked>
                     <label for="">This customer is taxable</label>
-                    <label for="">City</label><br>
-                    <input type="text" name="" id="">
-                    
                 </div>
                 <div>
                     <label for="">Default tax code</label><br>
@@ -135,29 +140,6 @@
                         <option value="">None</option>
                         <option value=""> &#10010; Add</option>
                     </select>
-                </div>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Payment &amp; Billing</legend>
-            <div class="app-form-group">
-                <div>
-                    <label for="">Preferred payment method</label><br>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="">Terms</label><br>
-                    <input type="text" name="" id="">
-                    
-                </div>
-                <div>
-                    <label for="">Opening balance</label><br>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="">as of</label><br>
-                    <input type="date" name="invoice-due-date" required pattern="\d{4}-\d{2}-\d{2}">
-                    <span class="validity"></span>
                 </div>
             </div>
         </fieldset>
@@ -199,13 +181,7 @@
                     <input type="date" name="invoice-due-date" required pattern="\d{4}-\d{2}-\d{2}">
                     <span class="validity"></span>
                 </div>
-                <div id="c-parent">
-                    <input type="radio" id="dad" name="parent-1" value="is_dad"
-                    checked>
-                    <label for="parent"> is a Dad?</label><br>
-                    <input type="radio" id="mom" name="parent-2" value="is_mom">
-                    <label for="parent"> is a Mom?</label>
-                </div>
+                
                 <div>
                     <label for="">Occupation</label><br>
                     <input type="text" name="" id="">
@@ -247,13 +223,7 @@
                     <label for="">Name</label><br>
                     <input type="text" name="" id="">
                 </div>
-                <div id="s-parent">
-                    <input type="radio" id="mom" name="parent-2" value="is_mom"  checked>
-                    <label for="parent"> is a Mom?</label><br>
-                    <input type="radio" id="dad" name="parent-1" value="is_dad">
-                    <label for="parent"> is a Dad?</label>
-
-                </div>
+               
             </div>
         </fieldset>
 

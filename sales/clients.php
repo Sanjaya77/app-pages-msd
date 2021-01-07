@@ -24,17 +24,16 @@
            
         </div>
         <div class="main-table-container">
-            <div class="client-overview">
+            <div class="client-overview-grid">
                 <div class="th">
                     <input type="checkbox" id="tic" name="tic">
                 </div>
                 <p class="th">Client</p>
                 <p class="th">Email</p>
                 <p class="th">Phone</p>
-                <p class="th">Address</p>
-                <p class="th">Pending Jobs</p>
-                <p class="th">Pending Invoices</p>
-                <p class="th">Overdue Balance</p>
+                <p class="th">Jobs</p>
+                <p class="th">Invoices</p>
+                <p class="th">Open Balance</p>
                 <p class="th">Added Date</p>
                 <p class="th">Last Update</p>
                 <p class="th">Action</p>
@@ -43,9 +42,12 @@
                     <input type="checkbox" id="tic" name="tic">
                 </div>
                 <div class="td">Jhon Doe</div>
-                <div class="td">jhon_doe@example.com <a href="" class="send-email"><i class="far fa-envelope"></i></a></div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4E7;</span> jhon_doe@example.com 
+                    </a>
+                </div>
                 <div class="td">+1 (202) 123 4567</div>
-                <div class="td">11 Street, #line-2, City, State, Country</div>
                 <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending job</div>
                 <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending invoices</div>
                 <div class="td">&#36;1560.00</div>
@@ -58,9 +60,12 @@
                     <input type="checkbox" id="tic" name="tic">
                 </div>
                 <div class="td">Jhon Doe</div>
-                <div class="td">jhon_doe@example.com <a href="" class="send-email"><i class="far fa-envelope"></i></a></div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4E7;</span> jhon_doe@example.com 
+                    </a>
+                </div>
                 <div class="td">+1 (202) 123 4567</div>
-                <div class="td">11 Street, #line-2, City, State, Country</div>
                 <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending job</div>
                 <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending invoices</div>
                 <div class="td">&#36;1560.00</div>
@@ -73,9 +78,12 @@
                     <input type="checkbox" id="tic" name="tic">
                 </div>
                 <div class="td">Jhon Doe</div>
-                <div class="td">jhon_doe@example.com <a href="" class="send-email"><i class="far fa-envelope"></i></a></div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4E7;</span> jhon_doe@example.com 
+                    </a>
+                </div>
                 <div class="td">+1 (202) 123 4567</div>
-                <div class="td">11 Street, #line-2, City, State, Country</div>
                 <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending job</div>
                 <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending invoices</div>
                 <div class="td">&#36;1560.00</div>

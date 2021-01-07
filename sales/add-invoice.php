@@ -46,8 +46,56 @@
                         <input type="text" name="" id="" placeholder="Existing one should display but should be able to update here">
                    </div>
                    <div>
+                     <button id="billing-a">Add /Edit Billing Address </button>
+                     <button id="shipping-a">Add /Edit Shipping Address </button>
+                   </div>
+                   <div id="add-bill-a" class="add-inv-bill-a ">
                    <label for="">Billing Address</label><br>
-                     <textarea name="" id="" cols="auto" rows="5" ></textarea>
+                     <div>
+                        <label for="">Street</label><br>
+                        <input type="text" name="" id="">
+                     </div>
+                     <div>
+                        <label for="">City</label><br>
+                        <input type="text" name="" id="">
+                        
+                     </div>
+                     <div>
+                        <label for="">Zip</label><br>
+                        <input type="text" name="" id="">
+                     </div>
+                     <div>
+                        <label for="">State/Province</label><br>
+                        <input type="text" name="" id="">
+                     </div>
+                     <div>
+                        <label for="">Country</label><br>
+                        <input type="text" name="" id="">
+                     </div>
+                  </div>
+                   <div id="add-ship-a" class="add-inv-bill-a ">
+                   <label for="">Shipping Address</label><br>
+                     <div>
+                        <label for="">Street</label><br>
+                        <input type="text" name="" id="">
+                     </div>
+                     <div>
+                        <label for="">City</label><br>
+                        <input type="text" name="" id="">
+                        
+                     </div>
+                     <div>
+                        <label for="">Zip</label><br>
+                        <input type="text" name="" id="">
+                     </div>
+                     <div>
+                        <label for="">State/Province</label><br>
+                        <input type="text" name="" id="">
+                     </div>
+                     <div>
+                        <label for="">Country</label><br>
+                        <input type="text" name="" id="">
+                     </div>
                   </div>
                </div>
             </fieldset>
@@ -65,18 +113,18 @@
                      </select>
                   </div>
                   <div>
-                     <label for="">Invoice Date</label><br>
+                     <label for="">Invoice Date<sup>*</sup></label><br>
                      <input class="date" type="date" name="invoice-due-date" required pattern="\d{4}-\d{2}-\d{2}">
                      <span class="validity"></span>
                   </div>
                   <div>
-                     <label for="">Due Date</label><br>
+                     <label for="">Due Date <sup>*</sup></label><br>
                      <input class="date" type="date" name="invoice-due-date" required pattern="\d{4}-\d{2}-\d{2}">
                      <span class="validity"></span>
                   </div>
                   
                   <div>
-                     <label for="">Team Member</label><br>
+                     <label for="">Team Member <sup>*</sup></label><br>
                      <input type="text" name="" id="">
                   </div>
                   <div>
@@ -177,17 +225,6 @@
                         <p>&#36; 0.00</p>
                      </div>
                      <div>
-                        <p>Discounts</p>
-                        
-                        <select name="discount" id="discount-select" class="table-footer-input-1">
-                           <option value="0">0.00</option>
-                           <option value="5%">5%</option>
-                           <option value="">Holiday Promo</option>
-                           <option value="" class="add-green">&#10010; Add</option>
-                     </select>
-
-                     </div>
-                     <div>
                        
                         <div class="tax-totals-1">
                         <p>Taxable Subtotal : &#36; 0.00</p>
@@ -242,6 +279,18 @@
          <a href="#" class="form-btn-lg">Save</a>
          <a href="#" class="form-btn-lg">Save &amp; Close</a>
       </footer>
-      <script src="../js/form-script.js"></script>
+      <script>
+            const addBilAddress = document.getElementById("billing-a");
+            const bilAddress = document.getElementById("add-bill-a");
+            addBilAddress.addEventListener("click", ()=>{
+            bilAddress.classList.toggle("show")
+            });
+
+            const addShipAddress = document.getElementById("shipping-a");
+            const shipAddress = document.getElementById("add-ship-a");
+            addShipAddress.addEventListener("click", ()=>{
+            shipAddress.classList.toggle("show")
+            });
+      </script>
    </body>
 </html>
