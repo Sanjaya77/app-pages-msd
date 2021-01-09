@@ -140,7 +140,7 @@
                   <div class="td">&#36;500.00</div>
                   <div class="td">&#36;2500.00</div>
                   <div class="td"> 
-                     <a href="#"><span class="emo-lg">&#x1F4D6;</span> Open </a>
+                     <a href="#"><span class="emo-lg">&#x26A0;</span> Overdue </a>
                      <span class="due"> Overdue on 1/12/2021</span>
                      <span class="small-print">Partially paid &#36;2000.00</span>
                   </div>

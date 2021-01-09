@@ -21,10 +21,15 @@
             <p>Total Unpaid : &#36;31000.45 <span class="small-print">&#40; Last 365 days &#41;</span></p>
             <p>Paid : &#36;31000.45 <span class="small-print">&#40; Last 30 days &#41;</span></p>
             <button>Create Invoice</button>
+            <div>
+                <button class="filter-tab tab-1">11 Overdue</button>
+                <button class="filter-tab tab-2">23 Open</button>
+                <button class="filter-tab tab-3">68 Paid in last 30 Days</button>
+            </div>
            
         </div>
         <div class="main-table-container">
-            <div class="invoice-overview">
+            <div class="invoice-overview-grid">
                 <div class="th">
                     <input type="checkbox" id="tic" name="tic">
                 </div>
@@ -46,8 +51,17 @@
                 <div class="td">&#36;4560.00</div>
                 <div class="td">&#36;1560.00</div>
                 <div class="td">4/12/2020</div>
-                <div class="td"> <a href="#"><i class="fas fa-check-circle">&nbsp;</i>Deposited</a></div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Print</div>
+                <div class="td"> 
+                    <a href="#">
+                        <span class="emo">&#x2705;</span>
+                        Paid
+                    </a>
+                    
+                </div>
+                <div class="td">  
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
                  <!-- DATA ROW END -->
                 <!-- DATA ROW STRAT -->
                 <div class="td">
@@ -56,11 +70,18 @@
                 <div class="td">4/11/2020</div>
                 <div class="td">11829</div>
                 <div class="td">Jhon Doe</div>
-                <div class="td">&#36;4560.00</div>
-                <div class="td">&#36;1560.00</div>
-                <div class="td">4/12/2020</div>
-                <div class="td"> <i class="fas fa-eye-slash">&nbsp;</i>Voided</div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Print</div>
+                <div class="td">&#36;5000.00</div>
+                <div class="td">&#36;3000.00</div>
+                <div class="td">5/12/2020</div>
+                <div class="td"> 
+                     <a href="#"><span class="emo-lg">&#x26A0;</span>Overdue </a>
+                     <span class="due"> Overdue on 5/12/2020</span>
+                     <span class="small-print">Partially paid &#36;2000.00</span>
+                  </div>
+                <div class="td">  
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
                  <!-- DATA ROW END -->
                 <!-- DATA ROW STRAT -->
                 <div class="td">
@@ -70,10 +91,16 @@
                 <div class="td">11829</div>
                 <div class="td">Peter Davis</div>
                 <div class="td">&#36;4560.00</div>
-                <div class="td">&#36;1560.00</div>
+                <div class="td">&#36;3560.00</div>
                 <div class="td">4/12/2020</div>
-                <div class="td alert"> <a href="#"><i class="fas fa-exclamation-triangle">&nbsp;</i>Overdue on 6/20/2020</a><span class="small-print">Partially paid &#36;3000.00</span></div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Print</div>
+                <div class="td alert"> 
+                     <a href="#"><span class="emo-lg">&#x1F4D6;</span>Open</a>
+                     <span class="due">Due on 4/12/2020</span>
+                     <span class="small-print">Partially paid &#36;1000.00</span></div>
+                <div class="td">  
+                     <a><span class="emo-lg">&#x1F5A8;</span>Print</a>
+                     <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
                  <!-- DATA ROW END -->
             
             </div>

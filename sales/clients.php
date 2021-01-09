@@ -17,11 +17,17 @@
 <body>
 <?php include '../nav.php' ?>
     <div class="main-container">
-        <div class="main-overview">
-            <button>Add Invoice</button>
-            <button>Add Job</button>
-            <button>Add Client</button>
-           
+        <div class="clients-main-overview">
+            <div>
+                <button>Add Invoice</button>
+                <button>Add Job</button>
+                <button>Add Client</button>
+            </div>
+            <div>
+                <button class="filter-tab tab-1">11 Overdue</button>
+                <button class="filter-tab tab-2">23 Open</button>
+                <button class="filter-tab tab-3">68 Paid in last 30 Days</button>
+            </div>
         </div>
         <div class="main-table-container">
             <div class="client-overview-grid">
@@ -48,12 +54,31 @@
                     </a>
                 </div>
                 <div class="td">+1 (202) 123 4567</div>
-                <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending job</div>
-                <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending invoices</div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4CC;</span> 1 pending job
+                    </a>
+                </div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo-lg">&#x26A0;</span>
+                       1 Overdue
+                    </a>
+                    <a href="">
+                       <span class="emo-lg">&#x1F4D6;</span>
+                       1 Open
+                    </a>
+                </div>
                 <div class="td">&#36;1560.00</div>
                 <div class="td">4/12/2020</div>
                 <div class="td">4/11/2020</div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Edit</div>
+                <div class="td">
+                    <a href="#">
+                       <span class="emo-lg">&#x1F58A;</span>
+                       Edit
+                    </a>
+                    <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
                  <!-- DATA ROW END -->
                 <!-- DATA ROW STRAT -->
                 <div class="td">
@@ -66,12 +91,27 @@
                     </a>
                 </div>
                 <div class="td">+1 (202) 123 4567</div>
-                <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending job</div>
-                <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending invoices</div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4CC;</span> 1 pending job
+                    </a>
+                </div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo-lg">&#x1F4D6;</span>
+                       1 Open
+                    </a>
+                </div>
                 <div class="td">&#36;1560.00</div>
                 <div class="td">4/12/2020</div>
                 <div class="td">4/11/2020</div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Edit</div>
+                <div class="td">
+                    <a href="#">
+                       <span class="emo-lg">&#x1F58A;</span>
+                       Edit
+                    </a>
+                    <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
                  <!-- DATA ROW END -->
                 <!-- DATA ROW STRAT -->
                 <div class="td">
@@ -84,12 +124,127 @@
                     </a>
                 </div>
                 <div class="td">+1 (202) 123 4567</div>
-                <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending job</div>
-                <div class="td alert"><i class="fas fa-exclamation-circle">&nbsp;</i> 1 pending invoices</div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4CC;</span> 1 pending job
+                    </a>
+                </div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo-lg">&#x26A0;</span>
+                       1 Overdue
+                    </a>
+                    <a href="">
+                       <span class="emo-lg">&#x1F4D6;</span>
+                       1 Open
+                    </a>
+                </div>
                 <div class="td">&#36;1560.00</div>
                 <div class="td">4/12/2020</div>
                 <div class="td">4/11/2020</div>
-                <div class="td"> <i class="fas fa-pencil-alt"></i>&nbsp; Edit</div>
+                <div class="td">
+                    <a href="#">
+                       <span class="emo-lg">&#x1F58A;</span>
+                       Edit
+                    </a>
+                    <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
+                 <!-- DATA ROW END -->
+                <!-- DATA ROW STRAT -->
+                <div class="td">
+                    <input type="checkbox" id="tic" name="tic">
+                </div>
+                <div class="td">Jhon Doe</div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4E7;</span> jhon_doe@example.com 
+                    </a>
+                </div>
+                <div class="td">+1 (202) 123 4567</div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4CC;</span> 1 pending job
+                    </a>
+                </div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo-lg">&#x26A0;</span>
+                       1 Overdue
+                    </a>
+                    <a href="">
+                       <span class="emo-lg">&#x1F4D6;</span>
+                       1 Open
+                    </a>
+                </div>
+                <div class="td">&#36;1560.00</div>
+                <div class="td">4/12/2020</div>
+                <div class="td">4/11/2020</div>
+                <div class="td">
+                    <a href="#">
+                       <span class="emo-lg">&#x1F58A;</span>
+                       Edit
+                    </a>
+                    <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
+                 <!-- DATA ROW END -->
+                <!-- DATA ROW STRAT -->
+                <div class="td">
+                    <input type="checkbox" id="tic" name="tic">
+                </div>
+                <div class="td">Jhon Doe</div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4E7;</span> jhon_doe@example.com 
+                    </a>
+                </div>
+                <div class="td">+1 (202) 123 4567</div>
+                <div class="td">
+                    
+                </div>
+                <div class="td">
+                    
+                </div>
+                <div class="td">&#36;1560.00</div>
+                <div class="td">4/12/2020</div>
+                <div class="td">4/11/2020</div>
+                <div class="td">
+                    <a href="#">
+                       <span class="emo-lg">&#x1F58A;</span>
+                       Edit
+                    </a>
+                    <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
+                 <!-- DATA ROW END -->
+                <!-- DATA ROW STRAT -->
+                <div class="td">
+                    <input type="checkbox" id="tic" name="tic">
+                </div>
+                <div class="td">Jhon Doe</div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo">&#x1F4E7;</span> jhon_doe@example.com 
+                    </a>
+                </div>
+                <div class="td">+1 (202) 123 4567</div>
+                <div class="td">
+                    
+                </div>
+                <div class="td">
+                    <a href="">
+                       <span class="emo-lg">&#x1F4D6;</span>
+                       1 Open
+                    </a>
+                </div>
+                <div class="td">&#36;1560.00</div>
+                <div class="td">4/12/2020</div>
+                <div class="td">4/11/2020</div>
+                <div class="td">
+                    <a href="#">
+                       <span class="emo-lg">&#x1F58A;</span>
+                       Edit
+                    </a>
+                    <a href="#"><span class="emo-lg">&#x1F441;</span>View</a>
+                </div>
                  <!-- DATA ROW END -->
                 
             

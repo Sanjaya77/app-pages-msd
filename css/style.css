@@ -298,6 +298,7 @@ header{
   padding: 1rem;
   flex-wrap: wrap;
   line-height:2;
+  justify-content: space-between;
 
 }
 
@@ -311,9 +312,10 @@ header{
   
 }
 /* INVOICE OVERVIEW - START  */
-.invoice-overview{
+.invoice-overview-grid{
   display: grid;
-  grid-template-columns:repeat(9, minmax(min-content, 1fr));
+  /* grid-template-columns:repeat(9, minmax(min-content, 1fr)); */
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
   grid-template-rows:auto;
   align-items: center;
   padding: 1rem;
@@ -323,7 +325,6 @@ header{
 
  .client-overview-grid{
   display: grid;
-  /* grid-template-columns:repeat(11, minmax(min-content, 1fr)); */
   grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
   grid-template-rows:auto;
   align-items: center;
@@ -331,6 +332,15 @@ header{
 }
 
  /* CUSTOMER VIEW - START  */
+
+ .clients-main-overview{
+  display:flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  line-height:2;
+  justify-content: space-between;
+
+}
  .client-summary {
    flex-basis: 100%;
    display: flex;
@@ -891,6 +901,24 @@ hr{
   border: 1px solid black;
   padding: 2px 3px;
 }
+.filter{
+  align-self: flex-end;
+}
+.filter-tab{
+  padding : 5px 15px;
+}
+.tab-1{
+  width: 10rem;
+  background-color: yellow;
+}
+.tab-2{
+  width: 10rem;
+  background-color: lightblue;
+}
+.tab-3{
+  width: 15rem;
+  background-color: lightgreen;
+}
 
 .show{
   display: block;
@@ -932,10 +960,13 @@ font size: 1.4 rem
 
     @media only screen and (min-width:37.5em){
       .client-transactions-grid{
-        grid-template-columns:5% 25% repeat(5, minmax(min-content, 1fr)) 15% 15%; 
+        grid-template-columns:2% 10% repeat(5, minmax(min-content, 1fr)) 15% 15%; 
       }
       .client-overview-grid{
-        grid-template-columns:2% repeat(9,1fr);
+        grid-template-columns:2% 8% 15% repeat(7,1fr);
+      }
+      .invoice-overview-grid{
+        grid-template-columns:2% repeat(8, minmax(min-content, 1fr));
       }
     
   }
